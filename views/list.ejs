@@ -5,6 +5,16 @@
     <title>To do List</title>
   </head>
   <body>
-    <h1>It's a <%=day%></h1>
+    <h1 style="color: green">It is <%=Day%></h1>
+    <h1 style="color: blue">Right now is <%=Time%></h1>
+    <ul>
+      <% for (var i=0; i < newListItems.length; i++){ %>
+         <li><%= newListItems[i] %></li>
+    <%  } %>
+    </ul>
+    <form class="" action="/" method="POST">
+      <input type="text" name="newItem" />
+      <button type="submit" name="submit">Add</button>
+    </form>
   </body>
 </html>
